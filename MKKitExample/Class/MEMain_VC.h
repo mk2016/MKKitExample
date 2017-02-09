@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  MEMain_VC.h
 //  MKKitExample
 //
 //  Created by xmk on 2017/2/9.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface MEMain_VC : UIViewController
 
 
 @end
