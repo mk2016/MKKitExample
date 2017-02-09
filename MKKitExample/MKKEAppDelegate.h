@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  MKKEAppDelegate.h
 //  MKKitExample
 //
 //  Created by xmk on 2017/2/9.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface MKKEAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 

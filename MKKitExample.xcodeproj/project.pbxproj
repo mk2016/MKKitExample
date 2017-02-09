@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		C52DB32C1E4C51A5009FBA5A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C52DB32B1E4C51A5009FBA5A /* main.m */; };
-		C52DB32F1E4C51A5009FBA5A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C52DB32E1E4C51A5009FBA5A /* AppDelegate.m */; };
-		C52DB3321E4C51A5009FBA5A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C52DB3311E4C51A5009FBA5A /* ViewController.m */; };
+		C52DB32F1E4C51A5009FBA5A /* MKKEAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C52DB32E1E4C51A5009FBA5A /* MKKEAppDelegate.m */; };
 		C52DB3351E4C51A5009FBA5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C52DB3331E4C51A5009FBA5A /* Main.storyboard */; };
 		C52DB3371E4C51A5009FBA5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C52DB3361E4C51A5009FBA5A /* Assets.xcassets */; };
 		C52DB33A1E4C51A5009FBA5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C52DB3381E4C51A5009FBA5A /* LaunchScreen.storyboard */; };
 		C52DB3451E4C51A5009FBA5A /* MKKitExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C52DB3441E4C51A5009FBA5A /* MKKitExampleTests.m */; };
 		C52DB3501E4C51A5009FBA5A /* MKKitExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C52DB34F1E4C51A5009FBA5A /* MKKitExampleUITests.m */; };
+		C52DB3621E4C54B4009FBA5A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C52DB3611E4C54B4009FBA5A /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,15 +32,20 @@
 			remoteGlobalIDString = C52DB3261E4C51A5009FBA5A;
 			remoteInfo = MKKitExample;
 		};
+		C52DB3681E4C55C7009FBA5A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C52DB3641E4C55C7009FBA5A /* MKKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C52DB2F31E4C48EB009FBA5A;
+			remoteInfo = MKKit;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		C52DB3271E4C51A5009FBA5A /* MKKitExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MKKitExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C52DB32B1E4C51A5009FBA5A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C52DB32D1E4C51A5009FBA5A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		C52DB32E1E4C51A5009FBA5A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C52DB3301E4C51A5009FBA5A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C52DB3311E4C51A5009FBA5A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C52DB32D1E4C51A5009FBA5A /* MKKEAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKKEAppDelegate.h; sourceTree = "<group>"; };
+		C52DB32E1E4C51A5009FBA5A /* MKKEAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKKEAppDelegate.m; sourceTree = "<group>"; };
 		C52DB3341E4C51A5009FBA5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C52DB3361E4C51A5009FBA5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C52DB3391E4C51A5009FBA5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +56,9 @@
 		C52DB34B1E4C51A5009FBA5A /* MKKitExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MKKitExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C52DB34F1E4C51A5009FBA5A /* MKKitExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKKitExampleUITests.m; sourceTree = "<group>"; };
 		C52DB3511E4C51A5009FBA5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C52DB3601E4C54B4009FBA5A /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C52DB3611E4C54B4009FBA5A /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C52DB3641E4C55C7009FBA5A /* MKKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MKKit.xcodeproj; path = libs/MKKit/MKKit.xcodeproj; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +109,9 @@
 		C52DB3291E4C51A5009FBA5A /* MKKitExample */ = {
 			isa = PBXGroup;
 			children = (
-				C52DB32D1E4C51A5009FBA5A /* AppDelegate.h */,
-				C52DB32E1E4C51A5009FBA5A /* AppDelegate.m */,
-				C52DB3301E4C51A5009FBA5A /* ViewController.h */,
-				C52DB3311E4C51A5009FBA5A /* ViewController.m */,
-				C52DB3331E4C51A5009FBA5A /* Main.storyboard */,
-				C52DB3361E4C51A5009FBA5A /* Assets.xcassets */,
-				C52DB3381E4C51A5009FBA5A /* LaunchScreen.storyboard */,
-				C52DB33B1E4C51A5009FBA5A /* Info.plist */,
+				C52DB3631E4C55B9009FBA5A /* MKKit */,
+				C52DB35F1E4C5498009FBA5A /* Class */,
+				C52DB35E1E4C536E009FBA5A /* Origin */,
 				C52DB32A1E4C51A5009FBA5A /* Supporting Files */,
 			);
 			path = MKKitExample;
@@ -138,6 +141,44 @@
 				C52DB3511E4C51A5009FBA5A /* Info.plist */,
 			);
 			path = MKKitExampleUITests;
+			sourceTree = "<group>";
+		};
+		C52DB35E1E4C536E009FBA5A /* Origin */ = {
+			isa = PBXGroup;
+			children = (
+				C52DB3361E4C51A5009FBA5A /* Assets.xcassets */,
+				C52DB33B1E4C51A5009FBA5A /* Info.plist */,
+				C52DB3381E4C51A5009FBA5A /* LaunchScreen.storyboard */,
+				C52DB3331E4C51A5009FBA5A /* Main.storyboard */,
+				C52DB32D1E4C51A5009FBA5A /* MKKEAppDelegate.h */,
+				C52DB32E1E4C51A5009FBA5A /* MKKEAppDelegate.m */,
+			);
+			name = Origin;
+			sourceTree = "<group>";
+		};
+		C52DB35F1E4C5498009FBA5A /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				C52DB3601E4C54B4009FBA5A /* ViewController.h */,
+				C52DB3611E4C54B4009FBA5A /* ViewController.m */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		C52DB3631E4C55B9009FBA5A /* MKKit */ = {
+			isa = PBXGroup;
+			children = (
+				C52DB3641E4C55C7009FBA5A /* MKKit.xcodeproj */,
+			);
+			name = MKKit;
+			sourceTree = "<group>";
+		};
+		C52DB3651E4C55C7009FBA5A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C52DB3691E4C55C7009FBA5A /* libMKKit.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +248,7 @@
 				TargetAttributes = {
 					C52DB3261E4C51A5009FBA5A = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = SU5VNK39CL;
 						ProvisioningStyle = Automatic;
 					};
 					C52DB33F1E4C51A5009FBA5A = {
@@ -232,6 +274,12 @@
 			mainGroup = C52DB31E1E4C51A5009FBA5A;
 			productRefGroup = C52DB3281E4C51A5009FBA5A /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C52DB3651E4C55C7009FBA5A /* Products */;
+					ProjectRef = C52DB3641E4C55C7009FBA5A /* MKKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				C52DB3261E4C51A5009FBA5A /* MKKitExample */,
@@ -240,6 +288,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		C52DB3691E4C55C7009FBA5A /* libMKKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libMKKit.a;
+			remoteRef = C52DB3681E4C55C7009FBA5A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		C52DB3251E4C51A5009FBA5A /* Resources */ = {
@@ -273,8 +331,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C52DB3321E4C51A5009FBA5A /* ViewController.m in Sources */,
-				C52DB32F1E4C51A5009FBA5A /* AppDelegate.m in Sources */,
+				C52DB32F1E4C51A5009FBA5A /* MKKEAppDelegate.m in Sources */,
+				C52DB3621E4C54B4009FBA5A /* ViewController.m in Sources */,
 				C52DB32C1E4C51A5009FBA5A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,7 +482,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = SU5VNK39CL;
 				INFOPLIST_FILE = MKKitExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mk.MKKitExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -435,7 +495,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = SU5VNK39CL;
 				INFOPLIST_FILE = MKKitExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mk.MKKitExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";

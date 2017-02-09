@@ -1,18 +1,18 @@
 //
-//  AppDelegate.m
+//  MKKEAppDelegate.m
 //  MKKitExample
 //
 //  Created by xmk on 2017/2/9.
 //  Copyright © 2017年 mk. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "MKKEAppDelegate.h"
 
-@interface AppDelegate ()
+@interface MKKEAppDelegate ()
 
 @end
 
-@implementation AppDelegate
+@implementation MKKEAppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {

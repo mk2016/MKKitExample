@@ -1,0 +1,3 @@
+[submodule "libs/MKKit"]
+	path = libs/MKKit
+	url = https://github.com/mk2016/MKKit.git
