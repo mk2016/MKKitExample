@@ -1,15 +1,17 @@
 //
-//  MEMain_VC.h
+//  UIViewController+MKAdd.h
 //  MKKitExample
 //
 //  Created by xmk on 2017/2/9.
 //  Copyright © 2017年 mk. All rights reserved.
 //
 
-#import "MKBaseTable_VC.h"
+#import <UIKit/UIKit.h>
 
-@interface MEMain_VC : MKBaseTable_VC
 
+
+@interface UIViewController (MKAdd)
 
 @end
+
 

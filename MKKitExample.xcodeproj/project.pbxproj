@@ -15,6 +15,14 @@
 		C52DB3451E4C51A5009FBA5A /* MKKitExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C52DB3441E4C51A5009FBA5A /* MKKitExampleTests.m */; };
 		C52DB3501E4C51A5009FBA5A /* MKKitExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C52DB34F1E4C51A5009FBA5A /* MKKitExampleUITests.m */; };
 		C52DB3621E4C54B4009FBA5A /* MEMain_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = C52DB3611E4C54B4009FBA5A /* MEMain_VC.m */; };
+		C52DB37B1E4C73AC009FBA5A /* MKBase_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = C52DB3751E4C73AC009FBA5A /* MKBase_VC.m */; };
+		C52DB37C1E4C73AC009FBA5A /* MKBaseTable_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = C52DB3771E4C73AC009FBA5A /* MKBaseTable_VC.m */; };
+		C52DB37F1E4C7404009FBA5A /* UIViewController+MKAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = C52DB37E1E4C7404009FBA5A /* UIViewController+MKAdd.m */; };
+		C57BE2F51E4D88E200177D4F /* MECustomBase_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = C57BE2F41E4D88E200177D4F /* MECustomBase_VC.m */; };
+		C57BE2FA1E4DBCE900177D4F /* MKBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C57BE2F91E4DBCE900177D4F /* MKBaseNavigationController.m */; };
+		C57BE3061E4DC3C900177D4F /* MECustNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C57BE3051E4DC3C900177D4F /* MECustNavigationController.m */; };
+		C5B441051E51436900424ED9 /* libMKKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C52DB3691E4C55C7009FBA5A /* libMKKit.a */; };
+		C5B441091E51510F00424ED9 /* MKBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B441081E51510F00424ED9 /* MKBaseTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +47,13 @@
 			remoteGlobalIDString = C52DB2F31E4C48EB009FBA5A;
 			remoteInfo = MKKit;
 		};
+		C547B4821E4D583F002CECB1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C52DB3641E4C55C7009FBA5A /* MKKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C52DB2F21E4C48EB009FBA5A;
+			remoteInfo = MKKit;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +74,21 @@
 		C52DB3601E4C54B4009FBA5A /* MEMain_VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MEMain_VC.h; sourceTree = "<group>"; };
 		C52DB3611E4C54B4009FBA5A /* MEMain_VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MEMain_VC.m; sourceTree = "<group>"; };
 		C52DB3641E4C55C7009FBA5A /* MKKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MKKit.xcodeproj; path = libs/MKKit/MKKit.xcodeproj; sourceTree = SOURCE_ROOT; };
+		C52DB3741E4C73AC009FBA5A /* MKBase_VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKBase_VC.h; sourceTree = "<group>"; };
+		C52DB3751E4C73AC009FBA5A /* MKBase_VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKBase_VC.m; sourceTree = "<group>"; };
+		C52DB3761E4C73AC009FBA5A /* MKBaseTable_VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKBaseTable_VC.h; sourceTree = "<group>"; };
+		C52DB3771E4C73AC009FBA5A /* MKBaseTable_VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKBaseTable_VC.m; sourceTree = "<group>"; };
+		C52DB37D1E4C7404009FBA5A /* UIViewController+MKAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MKAdd.h"; sourceTree = "<group>"; };
+		C52DB37E1E4C7404009FBA5A /* UIViewController+MKAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MKAdd.m"; sourceTree = "<group>"; };
+		C52DB3811E4C7BBA009FBA5A /* MKPCHFile.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKPCHFile.pch; sourceTree = "<group>"; };
+		C57BE2F31E4D88E200177D4F /* MECustomBase_VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MECustomBase_VC.h; sourceTree = "<group>"; };
+		C57BE2F41E4D88E200177D4F /* MECustomBase_VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MECustomBase_VC.m; sourceTree = "<group>"; };
+		C57BE2F81E4DBCE900177D4F /* MKBaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKBaseNavigationController.h; sourceTree = "<group>"; };
+		C57BE2F91E4DBCE900177D4F /* MKBaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKBaseNavigationController.m; sourceTree = "<group>"; };
+		C57BE3041E4DC3C900177D4F /* MECustNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MECustNavigationController.h; sourceTree = "<group>"; };
+		C57BE3051E4DC3C900177D4F /* MECustNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MECustNavigationController.m; sourceTree = "<group>"; };
+		C5B441071E51510F00424ED9 /* MKBaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKBaseTableViewCell.h; sourceTree = "<group>"; };
+		C5B441081E51510F00424ED9 /* MKBaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKBaseTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5B441051E51436900424ED9 /* libMKKit.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,6 +183,7 @@
 				C52DB3331E4C51A5009FBA5A /* Main.storyboard */,
 				C52DB32D1E4C51A5009FBA5A /* MKKEAppDelegate.h */,
 				C52DB32E1E4C51A5009FBA5A /* MKKEAppDelegate.m */,
+				C52DB3811E4C7BBA009FBA5A /* MKPCHFile.pch */,
 			);
 			name = Origin;
 			sourceTree = "<group>";
@@ -159,6 +191,11 @@
 		C52DB35F1E4C5498009FBA5A /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				C57BE2F21E4D888800177D4F /* DemoBaseClass */,
+				C52DB3731E4C73AC009FBA5A /* BaseClass */,
+				C52DB3781E4C73AC009FBA5A /* Category */,
+				C52DB3791E4C73AC009FBA5A /* MKHelper */,
+				C52DB37A1E4C73AC009FBA5A /* MKSubassembly */,
 				C52DB3601E4C54B4009FBA5A /* MEMain_VC.h */,
 				C52DB3611E4C54B4009FBA5A /* MEMain_VC.m */,
 			);
@@ -181,6 +218,55 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		C52DB3731E4C73AC009FBA5A /* BaseClass */ = {
+			isa = PBXGroup;
+			children = (
+				C52DB3741E4C73AC009FBA5A /* MKBase_VC.h */,
+				C52DB3751E4C73AC009FBA5A /* MKBase_VC.m */,
+				C57BE2F81E4DBCE900177D4F /* MKBaseNavigationController.h */,
+				C57BE2F91E4DBCE900177D4F /* MKBaseNavigationController.m */,
+				C52DB3761E4C73AC009FBA5A /* MKBaseTable_VC.h */,
+				C52DB3771E4C73AC009FBA5A /* MKBaseTable_VC.m */,
+				C5B441071E51510F00424ED9 /* MKBaseTableViewCell.h */,
+				C5B441081E51510F00424ED9 /* MKBaseTableViewCell.m */,
+			);
+			path = BaseClass;
+			sourceTree = "<group>";
+		};
+		C52DB3781E4C73AC009FBA5A /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				C52DB37D1E4C7404009FBA5A /* UIViewController+MKAdd.h */,
+				C52DB37E1E4C7404009FBA5A /* UIViewController+MKAdd.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		C52DB3791E4C73AC009FBA5A /* MKHelper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MKHelper;
+			sourceTree = "<group>";
+		};
+		C52DB37A1E4C73AC009FBA5A /* MKSubassembly */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MKSubassembly;
+			sourceTree = "<group>";
+		};
+		C57BE2F21E4D888800177D4F /* DemoBaseClass */ = {
+			isa = PBXGroup;
+			children = (
+				C57BE2F31E4D88E200177D4F /* MECustomBase_VC.h */,
+				C57BE2F41E4D88E200177D4F /* MECustomBase_VC.m */,
+				C57BE3041E4DC3C900177D4F /* MECustNavigationController.h */,
+				C57BE3051E4DC3C900177D4F /* MECustNavigationController.m */,
+			);
+			path = DemoBaseClass;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -195,6 +281,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				C547B4831E4D583F002CECB1 /* PBXTargetDependency */,
 			);
 			name = MKKitExample;
 			productName = MKKitExample;
@@ -332,8 +419,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				C52DB32F1E4C51A5009FBA5A /* MKKEAppDelegate.m in Sources */,
+				C57BE2F51E4D88E200177D4F /* MECustomBase_VC.m in Sources */,
+				C5B441091E51510F00424ED9 /* MKBaseTableViewCell.m in Sources */,
+				C52DB37B1E4C73AC009FBA5A /* MKBase_VC.m in Sources */,
+				C52DB37F1E4C7404009FBA5A /* UIViewController+MKAdd.m in Sources */,
 				C52DB3621E4C54B4009FBA5A /* MEMain_VC.m in Sources */,
 				C52DB32C1E4C51A5009FBA5A /* main.m in Sources */,
+				C57BE2FA1E4DBCE900177D4F /* MKBaseNavigationController.m in Sources */,
+				C57BE3061E4DC3C900177D4F /* MECustNavigationController.m in Sources */,
+				C52DB37C1E4C73AC009FBA5A /* MKBaseTable_VC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,6 +459,11 @@
 			isa = PBXTargetDependency;
 			target = C52DB3261E4C51A5009FBA5A /* MKKitExample */;
 			targetProxy = C52DB34C1E4C51A5009FBA5A /* PBXContainerItemProxy */;
+		};
+		C547B4831E4D583F002CECB1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MKKit;
+			targetProxy = C547B4821E4D583F002CECB1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -483,10 +582,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = SU5VNK39CL;
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/libs/MKKit";
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/MKKitExample/MKPCHFile.pch";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/libs/MKKit/**";
 				INFOPLIST_FILE = MKKitExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
 				OTHER_LDFLAGS = (
 					"-all_load",
 					"-Objc",
@@ -501,10 +603,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = SU5VNK39CL;
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/libs/MKKit";
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/MKKitExample/MKPCHFile.pch";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/libs/MKKit/**";
 				INFOPLIST_FILE = MKKitExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
 				OTHER_LDFLAGS = (
 					"-all_load",
 					"-Objc",
