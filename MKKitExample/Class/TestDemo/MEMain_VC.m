@@ -10,6 +10,7 @@
 #import <MKKit/MKKit.h>
 #import "UIViewController+MKAdd.h"
 #import "MKBaseTableViewCell.h"
+#import "TestModel.h"
 
 @interface MEMain_VC ()
 @end
@@ -22,14 +23,32 @@
     self.title = @"MKDome";
   
     [self setupUISingleTableView];
+    self.tableView.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"public_bg_Balloon"]];
     
 }
 
+- (void)deepCopySelf{
+    TestModel * model = [[TestModel alloc] init];
+    model.name = @"MK";
+    model.phone = @(13600000000);
+    model.age = 30;
+    model.gender = YES;
+    model.array = @[@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9",@"10"];
+    
+    TestModel *modelCopy = [model copySelfPerfect];
+    ELog(@"%p, %p", &model, &modelCopy);
+    NSDictionary *dic = [model mj_keyValues];
+    ELog(@"%@", [dic mk_jsonString]);
+    ELog(@"%@", [dic descriptionWithLocale:nil])
+}
+
+#pragma mark - ***** UITableView delegate *****
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     static NSString *cellId = @"cell";
     MKBaseTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
     if (!cell) {
         cell = [[MKBaseTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
+        cell.backgroundColor = [UIColor clearColor];
     }
     cell.textLabel.text = [NSString stringWithFormat:@"%ld",(long)indexPath.row];
     return cell;
@@ -37,8 +56,18 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    MEMain_VC *vc = [[MEMain_VC alloc] init];
-    [self.navigationController pushViewController:vc animated:YES];
+    if (indexPath.row == 0) {
+        [self deepCopySelf];
+    }else if (indexPath.row == 1){
+        ELog(@"mk_description : %@", [self.view mk_description]);
+    }else if (indexPath.row == 2){
+        NSUInteger i = hexStringToInt(@"0x666666");
+        ELog(@"i : %lu", (unsigned long)i);
+    }
+    else{
+        MEMain_VC *vc = [[MEMain_VC alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{

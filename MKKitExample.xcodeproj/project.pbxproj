@@ -14,7 +14,6 @@
 		C52DB33A1E4C51A5009FBA5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C52DB3381E4C51A5009FBA5A /* LaunchScreen.storyboard */; };
 		C52DB3451E4C51A5009FBA5A /* MKKitExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C52DB3441E4C51A5009FBA5A /* MKKitExampleTests.m */; };
 		C52DB3501E4C51A5009FBA5A /* MKKitExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C52DB34F1E4C51A5009FBA5A /* MKKitExampleUITests.m */; };
-		C52DB3621E4C54B4009FBA5A /* MEMain_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = C52DB3611E4C54B4009FBA5A /* MEMain_VC.m */; };
 		C52DB37B1E4C73AC009FBA5A /* MKBase_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = C52DB3751E4C73AC009FBA5A /* MKBase_VC.m */; };
 		C52DB37C1E4C73AC009FBA5A /* MKBaseTable_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = C52DB3771E4C73AC009FBA5A /* MKBaseTable_VC.m */; };
 		C52DB37F1E4C7404009FBA5A /* UIViewController+MKAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = C52DB37E1E4C7404009FBA5A /* UIViewController+MKAdd.m */; };
@@ -23,6 +22,10 @@
 		C57BE3061E4DC3C900177D4F /* MECustNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C57BE3051E4DC3C900177D4F /* MECustNavigationController.m */; };
 		C5B441051E51436900424ED9 /* libMKKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C52DB3691E4C55C7009FBA5A /* libMKKit.a */; };
 		C5B441091E51510F00424ED9 /* MKBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B441081E51510F00424ED9 /* MKBaseTableViewCell.m */; };
+		C5B441171E5186BE00424ED9 /* MEMain_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B441161E5186BE00424ED9 /* MEMain_VC.m */; };
+		C5B4411A1E5186D900424ED9 /* TestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B441191E5186D900424ED9 /* TestModel.m */; };
+		C5B441231E51BF7200424ED9 /* METabBarCtrlManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B441221E51BF7200424ED9 /* METabBarCtrlManager.m */; };
+		C5B441261E51C04200424ED9 /* MKBaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B441251E51C04200424ED9 /* MKBaseTabBarController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,8 +74,6 @@
 		C52DB34B1E4C51A5009FBA5A /* MKKitExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MKKitExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C52DB34F1E4C51A5009FBA5A /* MKKitExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKKitExampleUITests.m; sourceTree = "<group>"; };
 		C52DB3511E4C51A5009FBA5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C52DB3601E4C54B4009FBA5A /* MEMain_VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MEMain_VC.h; sourceTree = "<group>"; };
-		C52DB3611E4C54B4009FBA5A /* MEMain_VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MEMain_VC.m; sourceTree = "<group>"; };
 		C52DB3641E4C55C7009FBA5A /* MKKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MKKit.xcodeproj; path = libs/MKKit/MKKit.xcodeproj; sourceTree = SOURCE_ROOT; };
 		C52DB3741E4C73AC009FBA5A /* MKBase_VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKBase_VC.h; sourceTree = "<group>"; };
 		C52DB3751E4C73AC009FBA5A /* MKBase_VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKBase_VC.m; sourceTree = "<group>"; };
@@ -89,6 +90,14 @@
 		C57BE3051E4DC3C900177D4F /* MECustNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MECustNavigationController.m; sourceTree = "<group>"; };
 		C5B441071E51510F00424ED9 /* MKBaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKBaseTableViewCell.h; sourceTree = "<group>"; };
 		C5B441081E51510F00424ED9 /* MKBaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKBaseTableViewCell.m; sourceTree = "<group>"; };
+		C5B441151E5186BE00424ED9 /* MEMain_VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MEMain_VC.h; sourceTree = "<group>"; };
+		C5B441161E5186BE00424ED9 /* MEMain_VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MEMain_VC.m; sourceTree = "<group>"; };
+		C5B441181E5186D900424ED9 /* TestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestModel.h; sourceTree = "<group>"; };
+		C5B441191E5186D900424ED9 /* TestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestModel.m; sourceTree = "<group>"; };
+		C5B441211E51BF7200424ED9 /* METabBarCtrlManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = METabBarCtrlManager.h; sourceTree = "<group>"; };
+		C5B441221E51BF7200424ED9 /* METabBarCtrlManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = METabBarCtrlManager.m; sourceTree = "<group>"; };
+		C5B441241E51C04200424ED9 /* MKBaseTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKBaseTabBarController.h; sourceTree = "<group>"; };
+		C5B441251E51C04200424ED9 /* MKBaseTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKBaseTabBarController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,13 +200,12 @@
 		C52DB35F1E4C5498009FBA5A /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				C5B441141E5186BE00424ED9 /* TestDemo */,
 				C57BE2F21E4D888800177D4F /* DemoBaseClass */,
 				C52DB3731E4C73AC009FBA5A /* BaseClass */,
 				C52DB3781E4C73AC009FBA5A /* Category */,
 				C52DB3791E4C73AC009FBA5A /* MKHelper */,
 				C52DB37A1E4C73AC009FBA5A /* MKSubassembly */,
-				C52DB3601E4C54B4009FBA5A /* MEMain_VC.h */,
-				C52DB3611E4C54B4009FBA5A /* MEMain_VC.m */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -229,6 +237,8 @@
 				C52DB3771E4C73AC009FBA5A /* MKBaseTable_VC.m */,
 				C5B441071E51510F00424ED9 /* MKBaseTableViewCell.h */,
 				C5B441081E51510F00424ED9 /* MKBaseTableViewCell.m */,
+				C5B441241E51C04200424ED9 /* MKBaseTabBarController.h */,
+				C5B441251E51C04200424ED9 /* MKBaseTabBarController.m */,
 			);
 			path = BaseClass;
 			sourceTree = "<group>";
@@ -263,8 +273,21 @@
 				C57BE2F41E4D88E200177D4F /* MECustomBase_VC.m */,
 				C57BE3041E4DC3C900177D4F /* MECustNavigationController.h */,
 				C57BE3051E4DC3C900177D4F /* MECustNavigationController.m */,
+				C5B441211E51BF7200424ED9 /* METabBarCtrlManager.h */,
+				C5B441221E51BF7200424ED9 /* METabBarCtrlManager.m */,
 			);
 			path = DemoBaseClass;
+			sourceTree = "<group>";
+		};
+		C5B441141E5186BE00424ED9 /* TestDemo */ = {
+			isa = PBXGroup;
+			children = (
+				C5B441151E5186BE00424ED9 /* MEMain_VC.h */,
+				C5B441161E5186BE00424ED9 /* MEMain_VC.m */,
+				C5B441181E5186D900424ED9 /* TestModel.h */,
+				C5B441191E5186D900424ED9 /* TestModel.m */,
+			);
+			path = TestDemo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -420,12 +443,15 @@
 			files = (
 				C52DB32F1E4C51A5009FBA5A /* MKKEAppDelegate.m in Sources */,
 				C57BE2F51E4D88E200177D4F /* MECustomBase_VC.m in Sources */,
+				C5B4411A1E5186D900424ED9 /* TestModel.m in Sources */,
 				C5B441091E51510F00424ED9 /* MKBaseTableViewCell.m in Sources */,
 				C52DB37B1E4C73AC009FBA5A /* MKBase_VC.m in Sources */,
+				C5B441261E51C04200424ED9 /* MKBaseTabBarController.m in Sources */,
 				C52DB37F1E4C7404009FBA5A /* UIViewController+MKAdd.m in Sources */,
-				C52DB3621E4C54B4009FBA5A /* MEMain_VC.m in Sources */,
+				C5B441231E51BF7200424ED9 /* METabBarCtrlManager.m in Sources */,
 				C52DB32C1E4C51A5009FBA5A /* main.m in Sources */,
 				C57BE2FA1E4DBCE900177D4F /* MKBaseNavigationController.m in Sources */,
+				C5B441171E5186BE00424ED9 /* MEMain_VC.m in Sources */,
 				C57BE3061E4DC3C900177D4F /* MECustNavigationController.m in Sources */,
 				C52DB37C1E4C73AC009FBA5A /* MKBaseTable_VC.m in Sources */,
 			);
