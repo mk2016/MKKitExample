@@ -25,6 +25,9 @@
     [self setupUISingleTableView];
     self.tableView.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"public_bg_Balloon"]];
     
+    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        
+    }];
 }
 
 - (void)deepCopySelf{
@@ -39,7 +42,6 @@
     ELog(@"%p, %p", &model, &modelCopy);
     NSDictionary *dic = [model mj_keyValues];
     ELog(@"%@", [dic mk_jsonString]);
-    ELog(@"%@", [dic descriptionWithLocale:nil])
 }
 
 #pragma mark - ***** UITableView delegate *****
