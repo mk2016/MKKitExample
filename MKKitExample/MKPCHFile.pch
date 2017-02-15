@@ -16,5 +16,6 @@
 
 #import <MKKit/MKKit.h>
 
+#import "MEConst.h"
 
 #endif /* MKPCHFile_pch */

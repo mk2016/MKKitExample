@@ -12,7 +12,10 @@
 #import "MKBaseTableViewCell.h"
 #import "TestModel.h"
 
+#import "MKKitConst.h"
+
 @interface MEMain_VC ()
+
 @end
 
 @implementation MEMain_VC
@@ -21,6 +24,15 @@
     [super viewDidLoad];
     
     self.title = @"MKDome";
+    
+    NSArray *array = @[kRoute_test1 , kRoute_test2];
+    [[MKRouterHelper sharedInstance] initRouterWithAllowExternalRouteArray:array registerBlock:^{
+        [[MKRouter sharedInstance] map:kRoute_test1 toControllerClass:[MEMain_VC class]];
+        [[MKRouter sharedInstance] map:kRoute_test2 toBlock:^id(id params) {
+            ELog(@"params : %@", [params mk_jsonString]);
+            return params;
+        }];
+    }];
   
     [self setupUISingleTableView];
     self.tableView.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"public_bg_Balloon"]];
@@ -65,6 +77,11 @@
     }else if (indexPath.row == 2){
         NSUInteger i = hexStringToInt(@"0x666666");
         ELog(@"i : %lu", (unsigned long)i);
+    }else if (indexPath.row == 3){
+        UIViewController *vc = [[MKRouterHelper sharedInstance] matchVCWithRoute:kRoute_test1];
+        [self.navigationController pushViewController:vc animated:YES];
+    }else if (indexPath.row == 4){
+        [[MKRouterHelper sharedInstance] matchVCWithRoute:kRoute_test2];
     }
     else{
         MEMain_VC *vc = [[MEMain_VC alloc] init];

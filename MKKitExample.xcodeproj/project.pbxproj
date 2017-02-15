@@ -88,6 +88,7 @@
 		C57BE2F91E4DBCE900177D4F /* MKBaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKBaseNavigationController.m; sourceTree = "<group>"; };
 		C57BE3041E4DC3C900177D4F /* MECustNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MECustNavigationController.h; sourceTree = "<group>"; };
 		C57BE3051E4DC3C900177D4F /* MECustNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MECustNavigationController.m; sourceTree = "<group>"; };
+		C59E2A5B1E5440DB0066CC7B /* MEConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MEConst.h; sourceTree = "<group>"; };
 		C5B441071E51510F00424ED9 /* MKBaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKBaseTableViewCell.h; sourceTree = "<group>"; };
 		C5B441081E51510F00424ED9 /* MKBaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKBaseTableViewCell.m; sourceTree = "<group>"; };
 		C5B441151E5186BE00424ED9 /* MEMain_VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MEMain_VC.h; sourceTree = "<group>"; };
@@ -286,6 +287,7 @@
 				C5B441161E5186BE00424ED9 /* MEMain_VC.m */,
 				C5B441181E5186D900424ED9 /* TestModel.h */,
 				C5B441191E5186D900424ED9 /* TestModel.m */,
+				C59E2A5B1E5440DB0066CC7B /* MEConst.h */,
 			);
 			path = TestDemo;
 			sourceTree = "<group>";
