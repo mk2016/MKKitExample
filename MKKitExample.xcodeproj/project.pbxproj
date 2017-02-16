@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C50130711E55474800A9730B /* MKImageBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = C50130701E55474800A9730B /* MKImageBrowser.m */; };
 		C52DB32C1E4C51A5009FBA5A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C52DB32B1E4C51A5009FBA5A /* main.m */; };
 		C52DB32F1E4C51A5009FBA5A /* MKKEAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C52DB32E1E4C51A5009FBA5A /* MKKEAppDelegate.m */; };
 		C52DB3351E4C51A5009FBA5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C52DB3331E4C51A5009FBA5A /* Main.storyboard */; };
@@ -60,6 +61,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C501306F1E55474800A9730B /* MKImageBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKImageBrowser.h; sourceTree = "<group>"; };
+		C50130701E55474800A9730B /* MKImageBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKImageBrowser.m; sourceTree = "<group>"; };
 		C52DB3271E4C51A5009FBA5A /* MKKitExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MKKitExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C52DB32B1E4C51A5009FBA5A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C52DB32D1E4C51A5009FBA5A /* MKKEAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKKEAppDelegate.h; sourceTree = "<group>"; };
@@ -127,6 +130,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C501306E1E55472800A9730B /* MKImageBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				C501306F1E55474800A9730B /* MKImageBrowser.h */,
+				C50130701E55474800A9730B /* MKImageBrowser.m */,
+			);
+			path = MKImageBrowser;
+			sourceTree = "<group>";
+		};
 		C52DB31E1E4C51A5009FBA5A = {
 			isa = PBXGroup;
 			children = (
@@ -201,6 +213,7 @@
 		C52DB35F1E4C5498009FBA5A /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				C501306E1E55472800A9730B /* MKImageBrowser */,
 				C5B441141E5186BE00424ED9 /* TestDemo */,
 				C57BE2F21E4D888800177D4F /* DemoBaseClass */,
 				C52DB3731E4C73AC009FBA5A /* BaseClass */,
@@ -449,6 +462,7 @@
 				C5B441091E51510F00424ED9 /* MKBaseTableViewCell.m in Sources */,
 				C52DB37B1E4C73AC009FBA5A /* MKBase_VC.m in Sources */,
 				C5B441261E51C04200424ED9 /* MKBaseTabBarController.m in Sources */,
+				C50130711E55474800A9730B /* MKImageBrowser.m in Sources */,
 				C52DB37F1E4C7404009FBA5A /* UIViewController+MKAdd.m in Sources */,
 				C5B441231E51BF7200424ED9 /* METabBarCtrlManager.m in Sources */,
 				C52DB32C1E4C51A5009FBA5A /* main.m in Sources */,

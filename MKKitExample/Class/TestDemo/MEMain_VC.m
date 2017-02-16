@@ -11,6 +11,7 @@
 #import "UIViewController+MKAdd.h"
 #import "MKBaseTableViewCell.h"
 #import "TestModel.h"
+#import "MKImageBrowser.h"
 
 #import "MKKitConst.h"
 
