@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C50130711E55474800A9730B /* MKImageBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = C50130701E55474800A9730B /* MKImageBrowser.m */; };
 		C52DB32C1E4C51A5009FBA5A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C52DB32B1E4C51A5009FBA5A /* main.m */; };
 		C52DB32F1E4C51A5009FBA5A /* MKKEAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C52DB32E1E4C51A5009FBA5A /* MKKEAppDelegate.m */; };
 		C52DB3351E4C51A5009FBA5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C52DB3331E4C51A5009FBA5A /* Main.storyboard */; };
@@ -27,6 +26,9 @@
 		C5B4411A1E5186D900424ED9 /* TestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B441191E5186D900424ED9 /* TestModel.m */; };
 		C5B441231E51BF7200424ED9 /* METabBarCtrlManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B441221E51BF7200424ED9 /* METabBarCtrlManager.m */; };
 		C5B441261E51C04200424ED9 /* MKBaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B441251E51C04200424ED9 /* MKBaseTabBarController.m */; };
+		C5BDB1A71E5A924F00F0A1E1 /* MKImagesBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = C5BDB1A61E5A924F00F0A1E1 /* MKImagesBrowser.m */; };
+		C5BDB1AA1E5A9D7700F0A1E1 /* MKPictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5BDB1A91E5A9D7700F0A1E1 /* MKPictureView.m */; };
+		C5E24A7B1E56DDD0008E056D /* MKBrowserTest_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E24A7A1E56DDD0008E056D /* MKBrowserTest_VC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,8 +63,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C501306F1E55474800A9730B /* MKImageBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKImageBrowser.h; sourceTree = "<group>"; };
-		C50130701E55474800A9730B /* MKImageBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKImageBrowser.m; sourceTree = "<group>"; };
 		C52DB3271E4C51A5009FBA5A /* MKKitExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MKKitExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C52DB32B1E4C51A5009FBA5A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C52DB32D1E4C51A5009FBA5A /* MKKEAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKKEAppDelegate.h; sourceTree = "<group>"; };
@@ -102,6 +102,12 @@
 		C5B441221E51BF7200424ED9 /* METabBarCtrlManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = METabBarCtrlManager.m; sourceTree = "<group>"; };
 		C5B441241E51C04200424ED9 /* MKBaseTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKBaseTabBarController.h; sourceTree = "<group>"; };
 		C5B441251E51C04200424ED9 /* MKBaseTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKBaseTabBarController.m; sourceTree = "<group>"; };
+		C5BDB1A51E5A924F00F0A1E1 /* MKImagesBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKImagesBrowser.h; sourceTree = "<group>"; };
+		C5BDB1A61E5A924F00F0A1E1 /* MKImagesBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKImagesBrowser.m; sourceTree = "<group>"; };
+		C5BDB1A81E5A9D7700F0A1E1 /* MKPictureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKPictureView.h; sourceTree = "<group>"; };
+		C5BDB1A91E5A9D7700F0A1E1 /* MKPictureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKPictureView.m; sourceTree = "<group>"; };
+		C5E24A791E56DDD0008E056D /* MKBrowserTest_VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKBrowserTest_VC.h; sourceTree = "<group>"; };
+		C5E24A7A1E56DDD0008E056D /* MKBrowserTest_VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKBrowserTest_VC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,8 +139,10 @@
 		C501306E1E55472800A9730B /* MKImageBrowser */ = {
 			isa = PBXGroup;
 			children = (
-				C501306F1E55474800A9730B /* MKImageBrowser.h */,
-				C50130701E55474800A9730B /* MKImageBrowser.m */,
+				C5BDB1A51E5A924F00F0A1E1 /* MKImagesBrowser.h */,
+				C5BDB1A61E5A924F00F0A1E1 /* MKImagesBrowser.m */,
+				C5BDB1A81E5A9D7700F0A1E1 /* MKPictureView.h */,
+				C5BDB1A91E5A9D7700F0A1E1 /* MKPictureView.m */,
 			);
 			path = MKImageBrowser;
 			sourceTree = "<group>";
@@ -301,6 +309,8 @@
 				C5B441181E5186D900424ED9 /* TestModel.h */,
 				C5B441191E5186D900424ED9 /* TestModel.m */,
 				C59E2A5B1E5440DB0066CC7B /* MEConst.h */,
+				C5E24A791E56DDD0008E056D /* MKBrowserTest_VC.h */,
+				C5E24A7A1E56DDD0008E056D /* MKBrowserTest_VC.m */,
 			);
 			path = TestDemo;
 			sourceTree = "<group>";
@@ -457,13 +467,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				C52DB32F1E4C51A5009FBA5A /* MKKEAppDelegate.m in Sources */,
+				C5E24A7B1E56DDD0008E056D /* MKBrowserTest_VC.m in Sources */,
 				C57BE2F51E4D88E200177D4F /* MECustomBase_VC.m in Sources */,
 				C5B4411A1E5186D900424ED9 /* TestModel.m in Sources */,
 				C5B441091E51510F00424ED9 /* MKBaseTableViewCell.m in Sources */,
+				C5BDB1A71E5A924F00F0A1E1 /* MKImagesBrowser.m in Sources */,
 				C52DB37B1E4C73AC009FBA5A /* MKBase_VC.m in Sources */,
 				C5B441261E51C04200424ED9 /* MKBaseTabBarController.m in Sources */,
-				C50130711E55474800A9730B /* MKImageBrowser.m in Sources */,
 				C52DB37F1E4C7404009FBA5A /* UIViewController+MKAdd.m in Sources */,
+				C5BDB1AA1E5A9D7700F0A1E1 /* MKPictureView.m in Sources */,
 				C5B441231E51BF7200424ED9 /* METabBarCtrlManager.m in Sources */,
 				C52DB32C1E4C51A5009FBA5A /* main.m in Sources */,
 				C57BE2FA1E4DBCE900177D4F /* MKBaseNavigationController.m in Sources */,
