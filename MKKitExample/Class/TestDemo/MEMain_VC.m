@@ -11,7 +11,7 @@
 #import "UIViewController+MKAdd.h"
 #import "MKBaseTableViewCell.h"
 #import "TestModel.h"
-#import "MKImageBrowser.h"
+#import "MKBrowserTest_VC.h"
 
 #import "MKKitConst.h"
 
@@ -83,6 +83,9 @@
         [self.navigationController pushViewController:vc animated:YES];
     }else if (indexPath.row == 4){
         [[MKRouterHelper sharedInstance] matchVCWithRoute:kRoute_test2];
+    }else if (indexPath.row == 5){
+        MKBrowserTest_VC *vc = [[MKBrowserTest_VC alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
     }
     else{
         MEMain_VC *vc = [[MEMain_VC alloc] init];
