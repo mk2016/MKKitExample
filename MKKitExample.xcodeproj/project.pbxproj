@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AAA1FA994A70FE031C2A7C12 /* Pods_MKKitExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36AECA8760FF304B7551CA0D /* Pods_MKKitExample.framework */; };
+		C5287AA01E7948530008463D /* MKELogin_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = C5287A9F1E7948530008463D /* MKELogin_VC.m */; };
 		C52DB32C1E4C51A5009FBA5A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C52DB32B1E4C51A5009FBA5A /* main.m */; };
 		C52DB32F1E4C51A5009FBA5A /* MKKEAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C52DB32E1E4C51A5009FBA5A /* MKKEAppDelegate.m */; };
 		C52DB3351E4C51A5009FBA5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C52DB3331E4C51A5009FBA5A /* Main.storyboard */; };
@@ -21,7 +22,7 @@
 		C57BE2F51E4D88E200177D4F /* MECustomBase_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = C57BE2F41E4D88E200177D4F /* MECustomBase_VC.m */; };
 		C57BE2FA1E4DBCE900177D4F /* MKBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C57BE2F91E4DBCE900177D4F /* MKBaseNavigationController.m */; };
 		C57BE3061E4DC3C900177D4F /* MECustNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C57BE3051E4DC3C900177D4F /* MECustNavigationController.m */; };
-		C5B441051E51436900424ED9 /* ReferenceProxy in Frameworks */ = {isa = PBXBuildFile; fileRef = C52DB3691E4C55C7009FBA5A /* libMKKit.a */; };
+		C5B441051E51436900424ED9 /* libMKKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C52DB3691E4C55C7009FBA5A /* libMKKit.a */; };
 		C5B441091E51510F00424ED9 /* MKBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B441081E51510F00424ED9 /* MKBaseTableViewCell.m */; };
 		C5B441171E5186BE00424ED9 /* MEMain_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B441161E5186BE00424ED9 /* MEMain_VC.m */; };
 		C5B4411A1E5186D900424ED9 /* TestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B441191E5186D900424ED9 /* TestModel.m */; };
@@ -63,6 +64,8 @@
 
 /* Begin PBXFileReference section */
 		36AECA8760FF304B7551CA0D /* Pods_MKKitExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MKKitExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5287A9E1E7948530008463D /* MKELogin_VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKELogin_VC.h; sourceTree = "<group>"; };
+		C5287A9F1E7948530008463D /* MKELogin_VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKELogin_VC.m; sourceTree = "<group>"; };
 		C52DB3271E4C51A5009FBA5A /* MKKitExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MKKitExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C52DB32B1E4C51A5009FBA5A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C52DB32D1E4C51A5009FBA5A /* MKKEAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKKEAppDelegate.h; sourceTree = "<group>"; };
@@ -113,7 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5B441051E51436900424ED9 /* ReferenceProxy in Frameworks */,
+				C5B441051E51436900424ED9 /* libMKKit.a in Frameworks */,
 				AAA1FA994A70FE031C2A7C12 /* Pods_MKKitExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -317,6 +320,8 @@
 				C59E2A5B1E5440DB0066CC7B /* MEConst.h */,
 				C5E24A791E56DDD0008E056D /* MKBrowserTest_VC.h */,
 				C5E24A7A1E56DDD0008E056D /* MKBrowserTest_VC.m */,
+				C5287A9E1E7948530008463D /* MKELogin_VC.h */,
+				C5287A9F1E7948530008463D /* MKELogin_VC.m */,
 			);
 			path = TestDemo;
 			sourceTree = "<group>";
@@ -525,6 +530,7 @@
 			files = (
 				C52DB32F1E4C51A5009FBA5A /* MKKEAppDelegate.m in Sources */,
 				C5E24A7B1E56DDD0008E056D /* MKBrowserTest_VC.m in Sources */,
+				C5287AA01E7948530008463D /* MKELogin_VC.m in Sources */,
 				C57BE2F51E4D88E200177D4F /* MECustomBase_VC.m in Sources */,
 				C5B4411A1E5186D900424ED9 /* TestModel.m in Sources */,
 				C5B441091E51510F00424ED9 /* MKBaseTableViewCell.m in Sources */,

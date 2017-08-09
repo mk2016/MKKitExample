@@ -54,20 +54,47 @@
     MKImagesBrowser *browser = [[MKImagesBrowser alloc] init];
     browser.currentIndex = tap.view.tag;
     browser.dataSource = self;
-//    browser.imagesArray = self.images;
+//    browser.pageDotColor = [UIColor redColor];
+//    browser.pageDotSelectedColor = [UIColor blueColor];
+//    browser.pageDotImage = [UIImage imageNamed:@"public_select_0"];
+//    browser.pageDotCurrentImage = [UIImage imageNamed:@"public_select_1"];
+    browser.pageControlAlignment = MKIBPageControlAlignmentCenter;
     [browser show];
+    browser.longPressblock = ^(MKImagesBrowser *browser, NSUInteger index){
+        MKActionSheet *sheet = [[MKActionSheet alloc] initWithTitle:@"title" buttonTitles:@"1",@"2",@"3",@"4",@"5",@"6",@"7", nil];
+        sheet.destructiveButtonIndex = 2;
+        [sheet showWithBlock:^(MKActionSheet *actionSheet, NSInteger buttonIndex) {
+            ELog(@" index : %ld", (long)buttonIndex);
+        }];
+        ELog(@"long on index : %zd", index);
+    };
 }
 
-#pragma mark - ***** delegate *****
-- (UIImage *)imagesBrowser:(MKImagesBrowser *)browser placeholderImageWithIndex:(NSInteger)index{
+#pragma mark - ***** MKImagesBrowser delegate *****
+- (UIImage *)imagesBrowser:(MKImagesBrowser *)browser sourceImageWithIndex:(NSInteger)index{
     if (index < self.images.count) {
         return [self.images objectAtIndex:index];
     }
     return nil;
 }
 
+- (UIImageView *)imagesBrowser:(MKImagesBrowser *)browser viewWithIndex:(NSInteger)index{
+    if (index < self.scrollView.subviews.count) {
+        return [self.scrollView.subviews objectAtIndex:index];
+    }
+    return nil;
+}
+
+- (NSString *)imagesBrowser:(MKImagesBrowser *)browser HDImageUrlWithIndex:(NSInteger)index{
+    if (index < self.urlStrings.count) {
+        return [self.urlStrings objectAtIndex:index];
+    }
+    return nil;
+}
+
 - (NSInteger)numberOfImagesInBrowser:(MKImagesBrowser *)browser{
-    return self.images.count;
+//    return self.images.count;
+    return self.urlStrings.count;
 }
 
 
@@ -81,30 +108,34 @@
 - (NSMutableArray *)urlStrings{
     if (!_urlStrings) {
         _urlStrings = @[
-                        @"http://upload-images.jianshu.io/upload_images/1455933-e20b26b157626a5d.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240",
-                        @"http://upload-images.jianshu.io/upload_images/1455933-cb2abcce977a09ac.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240",
-                        @"http://upload-images.jianshu.io/upload_images/1455933-92be2b34e7e9af61.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240",
-                        @"http://upload-images.jianshu.io/upload_images/1455933-edd183910e826e8c.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240",
-                        @"http://upload-images.jianshu.io/upload_images/1455933-198c3a62a30834d6.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240",
-                        @"http://upload-images.jianshu.io/upload_images/1455933-e9e2967f4988eb7f.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240",
-                        @"http://upload-images.jianshu.io/upload_images/1455933-ce55e894fff721ed.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240",
-                        @"http://upload-images.jianshu.io/upload_images/1455933-5d3417fa034eafab.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240",
-                        @"http://upload-images.jianshu.io/upload_images/1455933-642e217fcdf15774.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240",
-                        @"http://upload-images.jianshu.io/upload_images/1455933-7245174910b68599.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240",
-                        @"http://upload-images.jianshu.io/upload_images/1455933-e74ae4df495938b7.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240",
-                        @"http://upload-images.jianshu.io/upload_images/1455933-ee53be08d63a0d22.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240",
-                        @"http://upload-images.jianshu.io/upload_images/1455933-412255ddafdde125.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240",
-                        @"http://upload-images.jianshu.io/upload_images/1455933-cee5618e9750de12.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240",
-                        @"http://upload-images.jianshu.io/upload_images/1455933-5d5d6ba05853700a.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240",
-                        @"http://upload-images.jianshu.io/upload_images/1455933-6dd4d281027c7749.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240",
-                        @"http://upload-images.jianshu.io/upload_images/1455933-5d3417fa034eafab.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240",
-                        @"http://upload-images.jianshu.io/upload_images/1455933-642e217fcdf15774.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240",
-                        @"http://upload-images.jianshu.io/upload_images/1455933-7245174910b68599.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240",
-                        @"http://upload-images.jianshu.io/upload_images/1455933-e74ae4df495938b7.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240",
-                        @"http://upload-images.jianshu.io/upload_images/1455933-ee53be08d63a0d22.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240",
-                        @"http://upload-images.jianshu.io/upload_images/1455933-412255ddafdde125.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240",
-                        @"http://upload-images.jianshu.io/upload_images/1455933-cee5618e9750de12.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240",
-                        @"http://upload-images.jianshu.io/upload_images/1455933-5d5d6ba05853700a.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240",
+                        @"https://raw.githubusercontent.com/mk2016/MKKitExample/master/Resource/photo/photo1.jpg",
+                        @"https://raw.githubusercontent.com/mk2016/MKKitExample/master/Resource/photo/photo2.jpg",
+                        @"https://raw.githubusercontent.com/mk2016/MKKitExample/master/Resource/photo/photo3.jpg",
+                        @"https://raw.githubusercontent.com/mk2016/MKKitExample/master/Resource/photo/photo4.jpg",
+                        @"https://raw.githubusercontent.com/mk2016/MKKitExample/master/Resource/photo/photo5.jpg",
+                        @"https://raw.githubusercontent.com/mk2016/MKKitExample/master/Resource/photo/photo6.jpg",
+                        @"https://raw.githubusercontent.com/mk2016/MKKitExample/master/Resource/photo/photo7.jpg",
+                        @"https://raw.githubusercontent.com/mk2016/MKKitExample/master/Resource/photo/photo8.jpg",
+                        @"https://raw.githubusercontent.com/mk2016/MKKitExample/master/Resource/photo/photo9.jpg",
+                        @"https://raw.githubusercontent.com/mk2016/MKKitExample/master/Resource/photo/photo10.jpg",
+                        
+                        
+//                        @"http://upload-images.jianshu.io/upload_images/1455933-e20b26b157626a5d.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240",
+//                        @"http://upload-images.jianshu.io/upload_images/1455933-cb2abcce977a09ac.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240",
+//                        @"http://upload-images.jianshu.io/upload_images/1455933-92be2b34e7e9af61.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240",
+//                        @"http://upload-images.jianshu.io/upload_images/1455933-edd183910e826e8c.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240",
+//                        @"http://upload-images.jianshu.io/upload_images/1455933-198c3a62a30834d6.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240",
+//                        @"http://upload-images.jianshu.io/upload_images/1455933-e9e2967f4988eb7f.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240",
+//                        @"http://upload-images.jianshu.io/upload_images/1455933-ce55e894fff721ed.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240",
+//                        @"http://upload-images.jianshu.io/upload_images/1455933-5d3417fa034eafab.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240",
+//                        @"http://upload-images.jianshu.io/upload_images/1455933-642e217fcdf15774.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240",
+//                        @"http://upload-images.jianshu.io/upload_images/1455933-7245174910b68599.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240",
+//                        @"http://upload-images.jianshu.io/upload_images/1455933-e74ae4df495938b7.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240",
+//                        @"http://upload-images.jianshu.io/upload_images/1455933-ee53be08d63a0d22.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240",
+//                        @"http://upload-images.jianshu.io/upload_images/1455933-412255ddafdde125.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240",
+//                        @"http://upload-images.jianshu.io/upload_images/1455933-cee5618e9750de12.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240",
+//                        @"http://upload-images.jianshu.io/upload_images/1455933-5d5d6ba05853700a.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240",
+//                        @"http://upload-images.jianshu.io/upload_images/1455933-6dd4d281027c7749.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240",
                         ].mutableCopy;
     }
     return _urlStrings;

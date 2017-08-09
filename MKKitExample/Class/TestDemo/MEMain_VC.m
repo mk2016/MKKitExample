@@ -14,6 +14,7 @@
 #import "MKBrowserTest_VC.h"
 
 #import "MKKitConst.h"
+#import "MKELogin_VC.h"
 
 @interface MEMain_VC ()
 
@@ -24,7 +25,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.title = @"MKDome";
+    self.title = @"MKDemo";
     
     NSArray *array = @[kRoute_test1 , kRoute_test2];
     [[MKRouterHelper sharedInstance] initRouterWithAllowExternalRouteArray:array registerBlock:^{
@@ -86,7 +87,11 @@
     }else if (indexPath.row == 5){
         MKBrowserTest_VC *vc = [[MKBrowserTest_VC alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
+    }else if (indexPath.row == 6){
+        MKELogin_VC *vc = [MKUIHelper getVCFromStoryboard:@"Main" identify:@"sid_MKELogin"];
+        [self.navigationController pushViewController:vc animated:YES];
     }
+    
     else{
         MEMain_VC *vc = [[MEMain_VC alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
